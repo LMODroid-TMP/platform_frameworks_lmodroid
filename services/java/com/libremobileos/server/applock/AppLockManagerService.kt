@@ -49,7 +49,6 @@ import com.android.internal.R
 import com.android.internal.annotations.GuardedBy
 import com.android.server.LocalServices
 import com.android.server.SystemService
-import com.android.server.libremobileos.AppLockManagerServiceInternal
 import com.android.server.notification.NotificationManagerInternal
 import com.android.server.pm.UserManagerInternal
 import com.android.server.wm.ActivityInterceptorCallback.ActivityInterceptorInfo
