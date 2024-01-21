@@ -26,8 +26,4 @@
     <protected-broadcast android:name="io.chaldeaprjkt.gamespace.action.GAME_START" />
     <protected-broadcast android:name="io.chaldeaprjkt.gamespace.action.GAME_STOP" />
 
-    <!-- @hide Allow managing parallel spaces or receiving related broadcasts. -->
-    <permission android:name="com.android.permission.MANAGE_PARALLEL_SPACES"
-        android:protectionLevel="signature|privileged" />
-
 </manifest>
