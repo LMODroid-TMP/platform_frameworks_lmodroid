@@ -87,6 +87,16 @@ public final class LMOSettingsProvider {
                         null, true, SettingsState.SYSTEM_PACKAGE_NAME);
             }
 
+            Setting qsTransparencySetting = systemSettings.getSettingLocked(
+                LMOSettings.System.QS_TRANSPARENCY);
+            if (qsTransparencySetting.isNull()) {
+                String defaultQsTransparency = Integer.toString(context
+                    .getResources().getInteger(R.integer.def_qs_transparency));
+                globalSettings.insertSettingOverrideableByRestoreLocked(
+                        LMOSettings.System.QS_TRANSPARENCY, defaultQsTransparency,
+                        null, true, SettingsState.SYSTEM_PACKAGE_NAME);
+            }
+
             Setting volumePanelSetting = secureSettings.getSettingLocked(
                     LMOSettings.Secure.VOLUME_PANEL_ON_LEFT);
             if (volumePanelSetting.isNull()) {

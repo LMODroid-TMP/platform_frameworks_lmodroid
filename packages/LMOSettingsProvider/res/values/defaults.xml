@@ -26,6 +26,9 @@
     -->
     <integer name="def_clock_position">2</integer>
 
+    <!-- Default for Settings.System.QS_TRANSPARENCY -->
+    <integer name="def_qs_transparency">85</integer>
+
     <!-- Defaults for Secure -->
     <!-- Default for Settings.Secure.VOLUME_PANEL_ON_LEFT -->
     <bool name="def_volume_panel_on_left">false</bool>
